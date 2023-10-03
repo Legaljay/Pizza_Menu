@@ -3,11 +3,12 @@ import { pizzaData } from "./data"
 
 export const Menu = () => {
   const pizzas = pizzaData;
+  const numPizzas = pizzas.length;
 
   return (
     <main className="menu">
         <h2>Our menu</h2>
-        {pizzas &&( 
+        {numPizzas > 0 &&( 
         
           <ul className="pizzas">
               {pizzaData.map((pizza) =>  (
