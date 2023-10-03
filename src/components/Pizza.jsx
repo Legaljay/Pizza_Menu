@@ -1,6 +1,6 @@
 export const Pizza = (props) => {
   return (
-    <li>
+    <li className="pizza">
         <img src={props.pizzaObj.photoName} alt={props.pizzaObj.name}/>
         <div>
             <h3>{props.pizzaObj.name}</h3>
