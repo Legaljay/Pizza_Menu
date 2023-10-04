@@ -1,4 +1,4 @@
-import { Pizza } from "./Pizza"
+import Pizza  from "./Pizza"
 import { pizzaData } from "./data"
 
 export const Menu = () => {
@@ -14,7 +14,10 @@ export const Menu = () => {
         
             <ul className="pizzas">
                 {pizzaData.map((pizza) =>  (
-                <Pizza key={pizza.name} pizzaObj={pizza}/>))}
+                <Pizza 
+                    key={pizza.name} 
+                    pizzaObj={pizza}
+                />))}
             </ul>
           
           ) : <p>We're still working on our menu. Please come back later :)</p>
